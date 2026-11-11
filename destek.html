@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depometre – Destek</title>
+<meta name="description" content="Depometre yardım ve iletişim sayfası: tüketim nasıl ölçülür, fiş okunamazsa ne yapılır, depo tahmini nasıl çalışır.">
+<style>
+  :root { --bg:#ffffff; --fg:#14213d; --muted:#5b6578; --line:#e3e7ee; --accent:#1e3a5f; --card:#f5f7fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1622; --fg:#e8ecf3; --muted:#9aa5b8; --line:#243044; --accent:#8fb4e3; --card:#172131; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .93rem; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+             padding: 16px 18px; margin: 24px 0 8px; }
+  .contact p:last-child { margin-bottom: 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Depometre Destek</h1>
+  <p class="muted">Yakıt fişinden gerçek tüketim, kilometre maliyeti ve depo tahmini</p>
+
+  <div class="contact">
+    <p><strong>İletişim:</strong> <a href="mailto:depometre.destek@gmail.com?subject=Depometre">depometre.destek@gmail.com</a></p>
+    <p>Yazarken uygulama sürümünü de ekle: Ayarlar → Hakkında (örneğin “1.0 (1)”).</p>
+  </div>
+
+  <h2>Tüketimim neden hâlâ görünmüyor?</h2>
+  <p>Depometre tüketimi tahmin etmez, ölçer. Ölçüm, kilometresi girilmiş iki tam depo arasında yapılır:</p>
+  <ol>
+    <li>Depoyu tamamen doldurduğunda kayıtta <strong>“Depoyu fulledim”</strong>i işaretle ve kilometreyi gir.</li>
+    <li>Bir sonraki tam depoda aynısını yap.</li>
+  </ol>
+  <p>İlk gerçek rakam ikinci tam depodan sonra görünür. Aradaki kısmi dolumları da kaydet;
+  hesaba onlar da katılır.</p>
+  <p>Tam depo kaydında kilometre eksikse Panel'deki uyarıya dokunup o kayda kilometre ekleyebilirsin.</p>
+
+  <h2>Fiş okunamadı ya da yanlış okundu</h2>
+  <ul>
+    <li>Okunan her alan onay ekranında düzeltilebilir. Kaydetmeden önce fişle karşılaştır.</li>
+    <li>Turuncu işaretli alanlar tam emin olunamayan değerlerdir. <strong>“hesaplandı”</strong> yazan
+        tutar fişten okunamamış, litre ve birim fiyattan hesaplanmıştır.</li>
+    <li>Fiş hiç okunamazsa bilgileri elle girebilirsin; fişin yoksa “Elle gir” seçeneğini kullan.</li>
+    <li>Daha iyi sonuç için fişi düz bir zeminde, gölgesiz ve tamamı görünecek şekilde çek.</li>
+  </ul>
+
+  <h2>Depo tahmini aracımın göstergesiyle uyuşmuyor</h2>
+  <p>Depo ve menzil değerleri sensörden gelmez; son tam depondan bu yana kaydettiğin yakıt ve
+  kilometreye göre yapılan bir <strong>tahmindir</strong>. Aracının kendi göstergesi her zaman daha doğrudur.</p>
+  <ul>
+    <li>Tahmin, son kaydettiğin ya da elle girdiğin kilometreye göre hesaplanır. Dolum yapmadan
+        yol yaptıysan depo kartındaki <strong>“Kilometre güncelle”</strong> ile güncel kilometreyi gir.</li>
+    <li>“Tahmin depo sınırlarının dışına çıktı” uyarısını görürsen depoyu doldurup kaydet; tahmin sıfırlanır.</li>
+    <li>Tahmin için araç bilgilerinde depo hacminin girilmiş olması gerekir.</li>
+  </ul>
+
+  <h2>“Verilerin açılamadı” ekranını görüyorum</h2>
+  <p><strong>Uygulamayı silme.</strong> Kayıtların büyük olasılıkla hâlâ telefonunda duruyor ve
+  uygulamayı silmek onları da siler. Uygulamayı tamamen kapatıp yeniden aç. Sorun sürerse ekrandaki
+  <strong>“Hata metnini paylaş”</strong> düğmesiyle metni yukarıdaki adrese gönder.</p>
+
+  <h2>Verilerimi görebilir ya da geri getirebilir misiniz?</h2>
+  <p>Hayır. Kayıtların ve fiş fotoğrafların yalnızca telefonunda durur; bize hiçbir şey ulaşmaz.
+  Bu yüzden verini göremeyiz ve kaybolan veriyi geri getiremeyiz. Telefonunun iCloud ya da
+  bilgisayar yedeği açıksa uygulama verilerin o yedeğe dahildir.</p>
+
+  <h2>Benzin + LPG aracım için tüketim çıkmıyor</h2>
+  <p>Çift yakıtlı araçlarda harcama takibi çalışır; tüketim ve depo tahmini ise henüz desteklenmiyor.</p>
+
+  <footer class="muted">
+    <p>Geliştirici: Ramazan Sayan · <a href="/gizlilik">Gizlilik Politikası</a></p>
+  </footer>
+</main>
+</body>
+</html>

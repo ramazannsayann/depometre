@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depometre – Support</title>
+<meta name="description" content="Depometre help and contact page: how consumption is measured, what to do if a receipt cannot be read, how the tank estimate works.">
+<style>
+  :root { --bg:#ffffff; --fg:#14213d; --muted:#5b6578; --line:#e3e7ee; --accent:#1e3a5f; --card:#f5f7fa; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1622; --fg:#e8ecf3; --muted:#9aa5b8; --line:#243044; --accent:#8fb4e3; --card:#172131; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; margin: 0 0 12px; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: .93rem; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+             padding: 16px 18px; margin: 24px 0 8px; }
+  .contact p:last-child { margin-bottom: 0; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <p class="muted"><a href="destek" lang="tr" hreflang="tr">Türkçe</a></p>
+  <h1>Depometre Support</h1>
+  <p class="muted">Real consumption, cost per kilometer and a tank estimate from your fuel receipt</p>
+
+  <div class="contact">
+    <p><strong>Contact:</strong> <a href="mailto:depometre.destek@gmail.com?subject=Depometre">depometre.destek@gmail.com</a></p>
+    <p>When you write, include the app version: Settings → About (for example “1.0 (1)”).</p>
+  </div>
+
+  <h2>Why is my consumption still not showing?</h2>
+  <p>Depometre does not estimate consumption; it measures it. The measurement is made between two full tanks that both have an odometer reading:</p>
+  <ol>
+    <li>When you fill the tank completely, turn on <strong>“Full tank”</strong> in the entry and enter the odometer reading.</li>
+    <li>Do the same at the next full tank.</li>
+  </ol>
+  <p>The first real figure appears after the second full tank. Record the partial fill-ups in between too;
+  they are included in the calculation as well.</p>
+  <p>If a full-tank entry is missing its odometer reading, you can tap the warning on the Dashboard and add the reading to that entry.</p>
+
+  <h2>The receipt could not be read, or was read wrong</h2>
+  <ul>
+    <li>Every field that was read can be corrected on the confirmation screen. Compare it with the receipt before saving.</li>
+    <li>Fields marked in orange are values that could not be read with full certainty. A total marked <strong>“calculated”</strong>
+        could not be read from the receipt and was calculated from the liters and the unit price.</li>
+    <li>If the receipt cannot be read at all, you can enter the details by hand; if you don't have the receipt, use the “Enter manually” option.</li>
+    <li>For a better result, photograph the receipt on a flat surface, without shadows, with all of it in view.</li>
+  </ul>
+
+  <h2>The tank estimate does not match my car's gauge</h2>
+  <p>The tank and range values do not come from a sensor; they are an <strong>estimate</strong> based on the fuel and
+  odometer readings you have recorded since your last full tank. Your car's own gauge is always more accurate.</p>
+  <ul>
+    <li>The estimate is calculated from the odometer reading you last recorded or entered manually. If you have driven
+        without filling up, enter your current odometer reading with <strong>“Update odometer”</strong> on the tank card.</li>
+    <li>If you see the “The estimate has gone outside the tank's limits” warning, fill the tank and record it; the estimate resets.</li>
+    <li>The estimate needs the tank capacity to be entered in the vehicle details.</li>
+  </ul>
+
+  <h2>I see the “Your data couldn't be opened” screen</h2>
+  <p><strong>Do not delete the app.</strong> Your entries are most likely still on your phone, and deleting
+  the app deletes them too. Close the app completely and open it again. If the problem continues, use the
+  <strong>“Share error details”</strong> button on that screen to send the text to the address above.</p>
+
+  <h2>Can you see or recover my data?</h2>
+  <p>No. Your entries and receipt photos stay only on your phone; nothing reaches us.
+  That is why we cannot see your data and cannot recover data that has been lost. If iCloud or
+  computer backup is turned on for your phone, the app's data is included in that backup.</p>
+
+  <h2>Consumption does not appear for my Gasoline + LPG vehicle</h2>
+  <p>For dual-fuel vehicles, spending tracking works; consumption and the tank estimate are not supported yet.</p>
+
+  <footer class="muted">
+    <p>Developer: Ramazan Sayan · <a href="privacy">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
